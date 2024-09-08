@@ -1,0 +1,6 @@
+<h2>Lista de Pessoas</h2>
+<ul>
+  <li *ngFor="let pessoa of pessoas">
+    <a [routerLink]="['/view', pessoa.id]">{{ pessoa.nome }} - {{ pessoa.cpf }}</a>
+  </li>
+</ul>

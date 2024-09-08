@@ -1,0 +1,16 @@
+<h2>Adicionar Pessoa</h2>
+<form (ngSubmit)="adicionarPessoa()">
+  <div>
+    <label>Nome:</label>
+    <input type="text" [(ngModel)]="nome" name="nome" required />
+  </div>
+  <div>
+    <label>CPF:</label>
+    <input type="text" [(ngModel)]="cpf" name="cpf" required />
+  </div>
+  <div>
+    <label>Telefone:</label>
+    <input type="text" [(ngModel)]="telefone" name="telefone" required />
+  </div>
+  <button type="submit">Adicionar Pessoa</button>
+</form>

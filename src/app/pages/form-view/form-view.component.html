@@ -1,0 +1,10 @@
+<h2>Visualizar Pessoa</h2>
+<div *ngIf="pessoa">
+  <p><strong>ID:</strong> {{ pessoa.id }}</p>
+  <p><strong>Nome:</strong> {{ pessoa.nome }}</p>
+  <p><strong>CPF:</strong> {{ pessoa.cpf }}</p>
+  <p><strong>Telefone:</strong> {{ pessoa.telefone }}</p>
+</div>
+<div *ngIf="!pessoa">
+  <p>Pessoa não encontrada.</p>
+</div>
